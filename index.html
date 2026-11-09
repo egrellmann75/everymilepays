@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0c4a56">
+  <meta name="author" content="Emerson Grellmann">
+  <meta name="description" content="Free, private tools for U.S. rideshare and delivery drivers: mileage, earnings, expenses, trip math, and IRS-informed tax guides. Data stays on your device.">
+  <meta property="og:title" content="Every Mile Pays">
+  <meta property="og:description" content="Track every mile. Keep more of what you earn. Free offline tools for rideshare and delivery drivers.">
+  <meta property="og:type" content="website">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Every Mile Pays — Track every mile. Keep more of what you earn.">
+  <meta property="og:image" content="img/og-share.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Every Mile Pays">
+  <meta name="twitter:image" content="img/og-share.jpg">
+  <title>Every Mile Pays</title>
+  <link rel="icon" href="icons/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="icons/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+SC:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#dashboard">
+      <img src="icons/logo.webp" width="36" height="36" alt="">
+      <span class="brand-text">
+        <span class="brand-name" data-i18n="brand.name">Every Mile Pays</span>
+        <span class="brand-tag" data-i18n="brand.tagline">Track every mile. Keep more of what you earn.</span>
+      </span>
+    </a>
+    <div class="header-actions">
+      <label class="visually-hidden" for="year-select" data-i18n="header.yearAria">Tax year</label>
+      <select id="year-select" aria-label="Tax year"></select>
+      <button type="button" class="lang-btn" id="lang-toggle" aria-expanded="false" aria-controls="lang-panel" data-i18n="lang.label">Language</button>
+    </div>
+  </header>
+  <div id="lang-panel" class="lang-panel" role="region" hidden>
+    <p class="note" data-i18n="lang.choose" style="max-width:1100px;margin:0 auto 0.55rem;">Choose your language</p>
+    <div class="lang-grid" id="lang-grid"></div>
+  </div>
+  <p class="banner" data-i18n="disclaimer.banner"></p>
+  <main id="main">
+    <section id="view-dashboard" class="view"></section>
+    <section id="view-logs" class="view" hidden></section>
+    <section id="view-tools" class="view" hidden></section>
+    <section id="view-learn" class="view" hidden></section>
+    <section id="view-more" class="view" hidden></section>
+  </main>
+  <nav class="tabbar" aria-label="Primary">
+    <button type="button" data-route="dashboard" aria-current="page">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 11.5 12 4l8 7.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1z"/></svg>
+      <span data-i18n="nav.home">Home</span>
+    </button>
+    <button type="button" data-route="logs">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 4h8a2 2 0 0 1 2 2v14l-6-3-6 3V6a2 2 0 0 1 2-2z"/></svg>
+      <span data-i18n="nav.logs">Logs</span>
+    </button>
+    <button type="button" data-route="tools">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+      <span data-i18n="nav.tools">Tools</span>
+    </button>
+    <button type="button" data-route="learn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19V6l8-3 8 3v13l-8-3z"/><path d="M12 3v13"/></svg>
+      <span data-i18n="nav.learn">Learn</span>
+    </button>
+    <button type="button" data-route="more">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="18" cy="12" r="1.6"/></svg>
+      <span data-i18n="nav.more">More</span>
+    </button>
+  </nav>
+  <footer class="site-footer">
+    <p data-i18n="disclaimer.footer"></p>
+    <p class="site-credit" data-i18n="disclaimer.credit">Created by Emerson Grellmann</p>
+  </footer>
+  <p id="selftest-out" class="note" hidden></p>
+  <style>.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}</style>
+  <script src="js/config.js"></script>
+  <script src="js/calc.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/i18n/en.js"></script>
+  <script src="js/i18n/es.js"></script>
+  <script src="js/i18n/pt.js"></script>
+  <script src="js/i18n/zh.js"></script>
+  <script src="js/i18n/hi.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
