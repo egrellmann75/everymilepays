@@ -255,7 +255,7 @@
       "<p>" + esc(t("book.lede")) + "</p>" +
       (url
         ? "<p><a class=\"btn btn-primary\" href=\"" + esc(url) + "\" target=\"_blank\" rel=\"noopener\">" + esc(t("book.buy")) + "</a></p>"
-        : "<p class=\"note\">" + esc(t("book.coming")) + "</p>") +
+        : "<p><span class=\"btn btn-primary\" aria-disabled=\"true\" style=\"opacity:.75;cursor:default\">" + esc(t("book.coming")) + "</span></p>") +
       "<p class=\"note\">" + esc(t("book.note")) + "</p>" +
       "<p><button class=\"btn\" data-open-learn=\"book\">" + esc(t("common.learnMore")) + "</button></p></div></section>";
   }
@@ -515,7 +515,7 @@
       bullets.map(function (b) { return "<li>" + esc(b) + "</li>"; }).join("") + "</ul>" +
       (url
         ? "<p><a class=\"btn btn-primary\" href=\"" + esc(url) + "\" target=\"_blank\" rel=\"noopener\">" + esc(t("book.buy")) + "</a></p>"
-        : "<p class=\"note\">" + esc(t("book.coming")) + "</p>") +
+        : "<p><span class=\"btn btn-primary\" aria-disabled=\"true\" style=\"opacity:.75;cursor:default\">" + esc(t("book.coming")) + "</span></p>") +
       "<p class=\"note\">" + esc(t("book.note")) + "</p></article>";
   }
 

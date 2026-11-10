@@ -104,7 +104,7 @@ DriveI18n.register("es", {
       "Qué entregarle a tu preparador de impuestos al final del año"
     ],
     buy: "Conseguir el libro",
-    coming: "El enlace de compra aparecerá aquí cuando el libro salga a la venta.",
+    coming: "Próximamente en Amazon",
     note: "El libro es una compra aparte. No lo necesitas para usar estas herramientas gratuitas."
   },
   learn: {

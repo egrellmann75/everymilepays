@@ -151,7 +151,7 @@
 
   return {
     appName: "Every Mile Pays",
-    BOOK_URL: "https://egrellmann.gumroad.com/l/bbbrt",
+    BOOK_URL: "",
     book: {
       title: "Every Mile Pays: The Rideshare Driver's Playbook"
     },

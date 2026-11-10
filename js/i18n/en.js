@@ -239,7 +239,7 @@ DriveI18n.register("en", {
       "What to hand your tax preparer at year-end"
     ],
     buy: "Get the book",
-    coming: "The buy link will appear here when the book goes on sale.",
+    coming: "Coming soon on Amazon",
     note: "The book is a separate purchase. You do not need it to use these free tools."
   },
   learn: {

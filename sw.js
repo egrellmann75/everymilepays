@@ -1,4 +1,4 @@
-const CACHE = "every-mile-pays-v1";
+const CACHE = "every-mile-pays-v2";
 const ASSETS = [
   "./",
   "./index.html",
