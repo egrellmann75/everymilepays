@@ -151,7 +151,7 @@
 
   return {
     appName: "Every Mile Pays",
-    BOOK_URL: "",
+    BOOK_URL: "https://www.amazon.com/dp/B0HRCKZZTN",
     book: {
       title: "Every Mile Pays: The Rideshare Driver's Playbook"
     },

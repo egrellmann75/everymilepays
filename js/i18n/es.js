@@ -103,7 +103,7 @@ DriveI18n.register("es", {
       "Cómo pensar en promociones, en usar varias apps y en las millas sin pago",
       "Qué entregarle a tu preparador de impuestos al final del año"
     ],
-    buy: "Conseguir el libro",
+    buy: "Consíguelo en Amazon",
     coming: "Próximamente en Amazon",
     note: "El libro es una compra aparte. No lo necesitas para usar estas herramientas gratuitas."
   },

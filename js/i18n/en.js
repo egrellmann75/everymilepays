@@ -238,7 +238,7 @@ DriveI18n.register("en", {
       "How to think about promotions, multi-apping, and unpaid miles",
       "What to hand your tax preparer at year-end"
     ],
-    buy: "Get the book",
+    buy: "Get it on Amazon",
     coming: "Coming soon on Amazon",
     note: "The book is a separate purchase. You do not need it to use these free tools."
   },
